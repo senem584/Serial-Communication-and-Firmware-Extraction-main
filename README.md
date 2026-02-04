@@ -1,4 +1,4 @@
-# Serial-Communication-and-Firmware-Extraction
+# Serial Communication and Firmware Extraction
 This repo is a series of tutorials to help develop skills with:
 * Serial communication (UART) using both hardware and software serial
 * Using TTL serial adapters/cables with microcontrollers
@@ -7,15 +7,15 @@ This repo is a series of tutorials to help develop skills with:
 
 ## Table of Contents
 * [Project 1: Interfacing with Serial](#project-1-interfacing-with-serial)
-* [Background](#background)
-* [Requirements](#requirements)
-* [Procedure](#procedure)
-* [Results/Discussion](#results/discussion)
+* [Background 1](#background-1)
+* [Requirements 1](#requirements-1)
+* [Procedure 1](#procedure-1)
+* [Results/Discussion 1](#results/discussion-1)
 * [Project 2: Programming Arduino with TTL Cable](#project-2-programming-arduino-with-ttl-cable)
 * [References](#references)
 
 ## Project 1: Interfacing with Serial
-### Background
+### Background 1
 This project aims to access and read two separate serial data streams from an Arduino Uno. One through the normal USB programming connection, and one through a  USB-to-TTL (UART) adapter. 
 #### Hardware Serial
 Hardware serial is a physical UART component built into the microcontroller.  
@@ -37,7 +37,7 @@ A TTL cable/adapter converts USB to logic-level serial(TX/RX/GND).
 
 [https://learn.sparkfun.com/tutorials/logic-levels/ttl-logic-levels#:~:text=TTL%20is%20an%20acronym%20for,threshold%20voltage%20levels%20to%20know] 
 
-### Requirements 
+### Requirements 1
 #### Materials 
 * Arduino Uno Board
 * USB-B Data Cable
@@ -46,14 +46,14 @@ A TTL cable/adapter converts USB to logic-level serial(TX/RX/GND).
 #### Software
 * Arduino IDE
 
-### Procedure
+### Procedure 1
 1. Flash "serialMonitorTest.ino" onto an Arduino Uno.
 2. Connect the Arduino to your laptop/desktop:
    * USB Cable (Hardware Serial)
    * TTL Adapter to pins 2/3 (RX/TX) and GND
 4. Open two sketches (different ports) and stream serial in both sketches.
 
-### Results/Discussion 
+### Results/Discussion 1 
 Both serial monitors display continuous output, and I am able to confirm that: 
 * Hardware Serial is streaming over USB, and
 * Software Serial is streaming over the TTL adapter.
